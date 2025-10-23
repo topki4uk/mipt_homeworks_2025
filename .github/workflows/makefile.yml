@@ -27,4 +27,4 @@ jobs:
         uv sync --group lint
       
     - name: Run make
-      run: make lint
+      run: source .venv/bin/activate && make
