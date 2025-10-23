@@ -27,4 +27,4 @@ jobs:
         uv sync --group lint
       
     - name: Install dependencies
-      run: make
+      run: make -f Makefile
