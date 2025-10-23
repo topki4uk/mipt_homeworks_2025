@@ -26,5 +26,5 @@ jobs:
         source .venv/bin/activate
         uv sync --group lint
       
-    - name: Install dependencies
-      run: make -f Makefile
+    - name: Run make
+      run: make lint
