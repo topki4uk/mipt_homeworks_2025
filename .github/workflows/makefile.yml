@@ -14,5 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Set venv
+      run: |
+        uv venv .venv
+        source .venv/bin/activate
+        uv sync --group lint
+        uv sync
+      
     - name: Install dependencies
       run: make
